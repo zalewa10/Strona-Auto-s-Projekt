@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-S OSK</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="alert">
+        <p>Najbliższy kurs - <b>11 kwietnia 2023r.</b></p>
+    </div>
+
+    <nav class="navbar">
+        <a href="#" class="logo"><img src="ikonki/logo-mobile.svg" alt=""></a>
+        <img class="eclipse" src="ikonki/Ellipse 753.png" alt="">
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="#">Strona Główna</a></li>
+                <li><a href="#">Cennik</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Kadra</a></li>
+                <li><a href="#">Voucher</a></li>
+                <li><a href="#">Zapisy</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+        <img src="ikonki/hamburger-menu.svg" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+    <header>
+        <div class="hero">
+            <div class="left">
+                <h1>Nie masz prawka?</h1>
+                <h2>Przyjdź do Sławka!</h2>
+                <h4>Jako szkoła jazdy jesteśmy tu po to, aby doprowadzić Cię do
+                    pozytywnie zdanego egzaminu. Razem przejdziemy przez każdy
+                    etap szkolenia, tak abyś poczuł się pewnie i bezpiecznie za kierownicą.</h4>
+                <button>ZAPISZ SIE</button>
+            </div>
+            <img src="ikonki/AUTO.png" class="auto-s" alt="">
+        </div>
+    </header>
+    <div class="wyroznia"></div>
+
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+</html>
