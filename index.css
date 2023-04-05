@@ -159,6 +159,9 @@ button {
         transition: all 0.5s ease;
     }
 
+    h1.naglowek {
+        color: black;
+    }
 
     .nav-links.mobile-menu {
         margin-left: 0;
