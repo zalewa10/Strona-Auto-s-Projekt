@@ -70,12 +70,13 @@ button {
 .auto-s {
     max-width: 250px;
     margin-left: 100px;
+    margin-bottom: 100px;
 
 }
 
 .hero {
     padding-top: 120px;
-    margin: 0 20px 0 30px;
+    margin: 0 20px 0 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -85,9 +86,79 @@ button {
 
 .wyroznia {
     background-color: white;
-    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
 }
 
+.naglowek {
+    color: black;
+    margin: 30px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.ikonka {
+    width: 40px;
+    margin-top: 20px;
+}
+
+.fiszki {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: space-around;
+
+}
+
+.fiszka {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.tytul {
+    font-weight: 700;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.opis {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+.obszar-dzialalnosci {
+    padding: 20px 0;
+    background-color: #e15638;
+}
+
+h1.naglowek2 {
+    color: white;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+
+.lokalizacje {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 60px;
+
+}
+
+.h2 {
+    margin-left: 20px;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+}
 
 .navbar {
     position: absolute;
@@ -113,11 +184,14 @@ button {
 }
 
 .navbar .nav-links ul li {
-    margin: 0 25px;
+    margin: 0px 35px;
 }
 
 .navbar .nav-links ul li.active a {
-    color: rgb(255, 0, 0);
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.5em 5em 0.5em 0.2em;
     font-weight: 600;
 }
 
@@ -148,16 +222,16 @@ button {
         top: 0;
         left: 0;
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.066);
-        backdrop-filter: blur(8px);
+        background-color: #e15638;
         width: 100%;
         height: 100vh;
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
         margin-left: -100%;
         transition: all 0.5s ease;
     }
+
 
     h1.naglowek {
         color: black;
@@ -168,15 +242,16 @@ button {
     }
 
 
-
     .nav-links ul {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
+        margin-left: 20px;
     }
 
     .navbar .nav-links ul li {
-        margin: 25px 0;
+        margin: 15px 0;
+        font-weight: 500;
         font-size: 1.2em;
     }
 
