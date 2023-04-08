@@ -11,7 +11,7 @@ p {
 }
 
 header {
-    height: 70vh;
+    height: 65vh;
     width: 100%;
     background-color: #e15638;
 }
@@ -29,13 +29,13 @@ b {
 
 h1 {
     color: white;
-    font-size: 2.1em;
+    font-size: 2.5em;
     font-weight: 900;
 }
 
 h2 {
     color: white;
-    font-size: 1.7em;
+    font-size: 2em;
     font-weight: 800;
     margin-top: 5px;
 }
@@ -51,9 +51,9 @@ h2 {
 h4 {
     color: white;
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-top: 30px;
-    width: 90%;
+    width: 80%;
 }
 
 button {
@@ -68,10 +68,10 @@ button {
 
 
 .auto-s {
-    max-width: 250px;
-    margin-left: 100px;
-    margin-bottom: 100px;
-
+    position: relative;
+    max-width: 200px;
+    margin-top: -60px;
+    margin-left: 150px;
 }
 
 .hero {
@@ -94,7 +94,7 @@ button {
 
 .naglowek {
     color: black;
-    margin: 30px 0;
+    margin: 40px 0 20px 0;
     align-items: center;
     text-align: center;
 }
@@ -109,7 +109,7 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: space-around;
-
+    margin-bottom: 40px;
 }
 
 .fiszka {
@@ -139,25 +139,23 @@ h1.naglowek2 {
     color: white;
     font-weight: 900;
     font-size: 2rem;
-    margin-left: 20px;
+    text-align: center;
 }
+
 
 
 .lokalizacje {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
+    display: grid;
+    flex-direction: row;
     margin: 0 60px;
-
 }
 
 .h2 {
-    margin-left: 20px;
-    font-size: 1.5em;
+    margin: 0 20px;
+    font-size: 1.2em;
     font-weight: 500;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .navbar {
@@ -191,9 +189,10 @@ h1.naglowek2 {
     color: black;
     background-color: white;
     border-radius: 10px;
-    padding: 0.5em 5em 0.5em 0.2em;
+    padding: 0.5em 6em 0.5em 1em;
     font-weight: 600;
 }
+
 
 .navbar .menu-hamburger {
     display: none;
@@ -224,7 +223,7 @@ h1.naglowek2 {
 }
 
 .lista p {
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 300;
 }
 
@@ -277,17 +276,29 @@ iframe {
     margin-bottom: 5px;
 }
 
-u {
-    text-decoration: underline;
+.copyright {
+    color: white;
+    margin: 0 30px;
+    font-size: 0.7em;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
+.copy {
+    margin-bottom: 5px;
+}
 
+.nawi-sek {
+    padding: 20px 0;
+}
 
 
 @media screen and (max-width:900px) {
     .navbar {
         padding: 0;
     }
+
 
     .navbar .logo {
         font-size: 2em;
@@ -296,6 +307,7 @@ u {
 
     .navbar .menu-hamburger {
         display: block;
+        z-index: 1;
     }
 
     .nav-links {
@@ -304,12 +316,13 @@ u {
         position: absolute;
         background-color: #e15638;
         width: 100%;
-        height: 100vh;
         display: flex;
+        padding-top: 80px;
         justify-content: left;
         align-items: center;
         margin-left: -100%;
         transition: all 0.5s ease;
+        z-index: 1;
     }
 
 
@@ -330,7 +343,7 @@ u {
     }
 
     .navbar .nav-links ul li {
-        margin: 15px 0;
+        margin: 15px 20px;
         font-weight: 500;
         font-size: 1.2em;
     }
@@ -338,6 +351,6 @@ u {
     .navbar .logo {
         position: absolute;
         top: 30px;
-        left: 30px;
+        left: 20px;
     }
 }
