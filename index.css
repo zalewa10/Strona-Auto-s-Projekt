@@ -6,15 +6,141 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.navbar-in {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background: #e15638;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    transform: translate(100%);
+    transition: all 0.3s linear;
+    z-index: 1;
+}
+
+#title-ham {
+    font-size: 1.25rem;
+    margin-right: 10px;
+    color: white;
+}
+
+.show-navbar {
+    transform: translate(0);
+}
+
+.close-btn {
+    font-size: 3vw;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    margin: 0 !important;
+    margin-left: 2px !important;
+    margin-top: 10px !important;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.close-btn:hover {
+    transform: rotate(90deg);
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.navbar-toggle {
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    color: white;
+    margin-top: 65px;
+    margin-right: 30px;
+}
+
+.slider-menu>li>a {
+    color: white;
+    font-size: 3vw;
+    padding: 5px;
+}
+
+.slider-menu>li>a {
+    transition: all 0.3s ease-in-out;
+    padding-left: 10px;
+}
+
+.slider-menu>li {
+    margin-bottom: 10px;
+
+}
+
+.slider-menu>li>a:hover {
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 100px;
+    padding-left: 0px;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #e15638;
+}
+
+#hamburger {
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin-right: 20px;
+    background: none;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.eclipse {
+    position: absolute;
+    float: right;
+    right: 0;
+}
+
+.logo {
+    float: left;
+    height: 2em;
+    margin-top: 28px;
+    margin-left: 1em;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
 p {
     font-size: 0.8em;
 }
 
-header {
-    height: 65vh;
-    width: 100%;
+/* .nav {
     background-color: #e15638;
-}
+} */
 
 .alert {
     height: 20px;
@@ -28,6 +154,7 @@ b {
 }
 
 h1 {
+    margin-top: 30px;
     color: white;
     font-size: 2.5em;
     font-weight: 900;
@@ -51,9 +178,9 @@ h2 {
 h4 {
     color: white;
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-top: 30px;
-    width: 80%;
+    width: 72%;
 }
 
 button {
@@ -61,11 +188,15 @@ button {
     background-color: white;
     margin-top: 2rem;
     font-weight: 800;
+    font-size: 1em;
     border: none;
     border-radius: 10px;
     padding: 0.7rem 1.5rem;
 }
 
+.top {
+    margin-bottom: 100px;
+}
 
 .auto-s {
     position: relative;
@@ -75,11 +206,11 @@ button {
 }
 
 .hero {
-    padding-top: 120px;
-    margin: 0 20px 0 20px;
+    padding: 0px 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: #e15638;
 }
 
 
@@ -94,9 +225,9 @@ button {
 
 .naglowek {
     color: black;
-    margin: 40px 0 20px 0;
-    align-items: center;
+    margin: 50px 0 20px 0px;
     text-align: center;
+    width: 100%;
 }
 
 .ikonka {
@@ -112,21 +243,32 @@ button {
     margin-bottom: 40px;
 }
 
-.fiszka {
+/* .fiszka {
     display: flex;
     flex-direction: column;
     width: 80%;
+} */
+
+.fiszka2 {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px 0 10px;
+    text-align: center;
 }
 
 .tytul {
     font-weight: 700;
-    font-size: 1em;
+    font-size: 1.4em;
     margin: 10px 0;
 }
 
 .opis {
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 1em;
 }
 
 
@@ -158,7 +300,7 @@ h1.naglowek2 {
     margin-top: 30px;
 }
 
-.navbar {
+/* .navbar {
     position: absolute;
     padding: 50px;
     display: flex;
@@ -166,8 +308,8 @@ h1.naglowek2 {
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
-}
-
+} */
+/* 
 .navbar a {
     color: white;
 }
@@ -183,9 +325,9 @@ h1.naglowek2 {
 
 .navbar .nav-links ul li {
     margin: 0px 35px;
-}
+} */
 
-.navbar .nav-links ul li.active a {
+/* .navbar .nav-links ul li.active a {
     color: black;
     background-color: white;
     border-radius: 10px;
@@ -200,7 +342,7 @@ h1.naglowek2 {
     top: 30px;
     right: 30px;
     width: 35px;
-}
+} */
 
 .headnas {
     margin-left: 20px;
@@ -223,8 +365,9 @@ h1.naglowek2 {
 }
 
 .lista p {
-    font-size: 0.9em;
-    font-weight: 300;
+    font-size: 1em;
+    font-weight: 400;
+    color: #1e1e1e;
 }
 
 .plus {
@@ -250,7 +393,7 @@ iframe {
 .yt {
     text-align: right;
     margin-right: 30px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .footer {
@@ -268,25 +411,27 @@ iframe {
     color: white;
     font-weight: 500;
     margin: 20px 0;
+    font-size: 1em;
 }
 
 .opis-sek {
     color: #909090;
     font-weight: 300;
     margin-bottom: 5px;
+    font-size: 0.8em;
 }
 
 .copyright {
     color: white;
     margin: 0 30px;
-    font-size: 0.7em;
+    font-size: 0.9em;
     font-weight: 200;
     text-align: center;
     padding-bottom: 10px;
 }
 
 .copy {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .nawi-sek {
@@ -295,7 +440,14 @@ iframe {
 
 
 @media screen and (max-width:900px) {
-    .navbar {
+
+
+    .slider-menu>li>a {
+        padding-left: 70px;
+    }
+
+
+    /* .navbar {
         padding: 0;
     }
 
@@ -324,12 +476,13 @@ iframe {
         transition: all 0.5s ease;
         z-index: 1;
     }
-
+ */
 
     h1.naglowek {
         color: black;
     }
 
+    /* 
     .nav-links.mobile-menu {
         margin-left: 0;
     }
@@ -346,11 +499,11 @@ iframe {
         margin: 15px 20px;
         font-weight: 500;
         font-size: 1.2em;
-    }
+    } */
 
-    .navbar .logo {
+    /* .navbar .logo {
         position: absolute;
         top: 30px;
         left: 20px;
-    }
+    } */
 }

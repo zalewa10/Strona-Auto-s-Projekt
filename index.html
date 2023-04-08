@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 </head>
 
 <body>
@@ -19,9 +20,11 @@
         <p>Najbliższy kurs - <b>11 kwietnia 2023r.</b></p>
     </div>
 
-    <nav class="navbar">
-
-        <img class="eclipse" src="ikonki/Ellipse 753.png" alt="">
+    <!-- <nav class="navbar">
+        <div class="top">
+            <a href="#" class="logo"><img src="ikonki/logo-mobile.svg" alt=""></a>
+            <img src="ikonki/hamburger-menu.svg" alt="menu hamburger" class="menu-hamburger">
+        </div>
         <div class="nav-links">
             <ul>
                 <li class="active"><a href="#">Strona Główna</a></li>
@@ -33,46 +36,59 @@
                 <li><a href="#">Kontakt</a></li>
             </ul>
         </div>
-        <a href="#" class="logo"><img src="ikonki/logo-mobile.svg" alt=""></a>
-        <img src="ikonki/hamburger-menu.svg" alt="menu hamburger" class="menu-hamburger">
-
-    </nav>
-    <header>
-        <div class="hero">
-            <div class="left">
-                <h1>Nie masz prawka?</h1>
-                <h2>Przyjdź do Sławka!</h2>
-                <h4>Jako szkoła jazdy jesteśmy tu po to, aby doprowadzić Cię do
-                    pozytywnie zdanego egzaminu. Razem przejdziemy przez każdy
-                    etap szkolenia, tak abyś poczuł się pewnie i bezpiecznie za kierownicą.</h4>
-                <button>ZAPISZ SIE</button>
-            </div>
-            <img src="ikonki/AUTO.png" class="auto-s" alt="">
+    </nav> -->
+    <div class="navbar">
+        <img class="eclipse" src="ikonki/Ellipse 753.png" alt="">
+        <a href="index.html"><img class="logo" href="index.html" src="ikonki/logo-mobile.svg" alt=""></a>
+        <button id="hamburger" class="navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    <div class="navbar-in">
+        <div class="navbar-header">
+            <button class="close-btn"><i class="fas fa-times"></i></button>
         </div>
-    </header>
-    <div class="wyroznia">
+        <ul class="slider-menu">
+            <li><a href="#">Zaloguj się</a></li>
+            <li><a href="#">O nas</a></li>
+            <li><a href="#">Nasze Produkty</a></li>
+        </ul>
+    </div>
 
-        <h1 class="naglowek">Co nas Wyróżnia</h1>
+    <div class="hero">
+        <div class="left">
+            <h1>Nie masz prawka?</h1>
+            <h2>Przyjdź do Sławka!</h2>
+            <h4>Jako szkoła jazdy jesteśmy tu po to, aby doprowadzić Cię do
+                pozytywnie zdanego egzaminu. Razem przejdziemy przez każdy
+                etap szkolenia, tak abyś poczuł się pewnie i bezpiecznie za kierownicą.</h4>
+            <button>ZAPISZ SIĘ</button>
+        </div>
+        <img src="ikonki/AUTO.png" class="auto-s" alt="">
+    </div>
+
+    <div class="wyroznia">
+        <h1 class="naglowek">Co nas wyróżnia</h1>
         <div class="fiszki">
-            <div class="fiszka">
+            <div class="fiszka2">
                 <img src="ikonki/heart-rate.png" class="ikonka" alt="">
                 <p class="tytul">Badania lekarskie w cenie</p>
                 <p class="opis">Nie musisz szukać lekarza, u nas na miejscu przeprowadzisz niezbędne badania i uzyskasz
                     wymagane orzeczenie lekarskie.</p>
             </div>
-            <div class="fiszka">
+            <div class="fiszka2">
                 <img src="ikonki/document.png" class="ikonka" alt="">
                 <p class="tytul">To my załatwiamy dokumenty</p>
                 <p class="opis">Twój czas jest cenny, możemy za Ciebie w urzędzie załatwić wymagany profil kandydata na
                     kierowcę (PKK).</p>
             </div>
-            <div class="fiszka">
+            <div class="fiszka2">
                 <img src="ikonki/highway-sign.png" class="ikonka" alt="">
                 <p class="tytul">Nauka jazdy po autostradzie</p>
                 <p class="opis">W ramach kursu obowiązkowo odbywasz szkolenie z jazdy po autostradzie oraz drogach
                     ekspresowych.</p>
             </div>
-            <div class="fiszka">
+            <div class="fiszka2">
                 <img src="ikonki/traffic-cone.png" class="ikonka" alt="">
                 <p class="tytul">Własny plac manewrowy</p>
                 <p class="opis">W naszej szkole oferujemy wszystko
@@ -176,5 +192,6 @@
         navLinks.classList.toggle('mobile-menu')
     })
 </script>
+<script src="script.js"></script>
 
 </html>
