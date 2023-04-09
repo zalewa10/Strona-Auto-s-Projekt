@@ -16,7 +16,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 40%;
+    width: 50%;
     height: 100%;
     background: #e15638;
     display: grid;
@@ -38,14 +38,14 @@
 }
 
 .close-btn {
-    font-size: 3vw;
+    font-size: 7vw;
     background: transparent;
     border-color: transparent;
     cursor: pointer;
-    margin: 0 !important;
-    margin-left: 2px !important;
-    margin-top: 10px !important;
+    margin-top: 55px;
+    margin-left: 120px;
     transition: all 0.3s ease-in-out;
+    color: white;
 
 }
 
@@ -73,17 +73,17 @@
 
 .slider-menu>li>a {
     color: white;
-    font-size: 3vw;
+    font-size: 5vw;
+    font-weight: 600;
     padding: 5px;
 }
 
 .slider-menu>li>a {
     transition: all 0.3s ease-in-out;
-    padding-left: 10px;
 }
 
 .slider-menu>li {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 
 }
 
@@ -91,8 +91,8 @@
     color: black;
     border-radius: 10px;
     background-color: white;
-    margin-left: 100px;
-    padding-left: 0px;
+    margin-left: 10px;
+    padding: 5px 40px 5px 10px;
 }
 
 
@@ -177,10 +177,10 @@ h2 {
 
 h4 {
     color: white;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1rem;
     margin-top: 30px;
-    width: 72%;
+    width: 74%;
 }
 
 button {
@@ -443,7 +443,7 @@ iframe {
 
 
     .slider-menu>li>a {
-        padding-left: 70px;
+        padding-left: 20px;
     }
 
 
