@@ -138,9 +138,7 @@ p {
     font-size: 0.8em;
 }
 
-/* .nav {
-    background-color: #e15638;
-} */
+
 
 .alert {
     height: 20px;
@@ -243,12 +241,6 @@ button {
     margin-left: 20px;
 }
 
-/* .fiszka {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-} */
-
 .fiszka2 {
     display: flex;
     margin: 0;
@@ -300,49 +292,6 @@ h1.naglowek2 {
     margin-top: 30px;
 }
 
-/* .navbar {
-    position: absolute;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    box-sizing: border-box;
-} */
-/* 
-.navbar a {
-    color: white;
-}
-
-.navbar .logo {
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.navbar .nav-links ul {
-    display: flex;
-}
-
-.navbar .nav-links ul li {
-    margin: 0px 35px;
-} */
-
-/* .navbar .nav-links ul li.active a {
-    color: black;
-    background-color: white;
-    border-radius: 10px;
-    padding: 0.5em 6em 0.5em 1em;
-    font-weight: 600;
-}
-
-
-.navbar .menu-hamburger {
-    display: none;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 35px;
-} */
 
 .headnas {
     margin-left: 20px;
@@ -446,64 +395,8 @@ iframe {
         padding-left: 20px;
     }
 
-
-    /* .navbar {
-        padding: 0;
-    }
-
-
-    .navbar .logo {
-        font-size: 2em;
-        font-weight: bold;
-    }
-
-    .navbar .menu-hamburger {
-        display: block;
-        z-index: 1;
-    }
-
-    .nav-links {
-        top: 0;
-        left: 0;
-        position: absolute;
-        background-color: #e15638;
-        width: 100%;
-        display: flex;
-        padding-top: 80px;
-        justify-content: left;
-        align-items: center;
-        margin-left: -100%;
-        transition: all 0.5s ease;
-        z-index: 1;
-    }
- */
-
     h1.naglowek {
         color: black;
     }
 
-    /* 
-    .nav-links.mobile-menu {
-        margin-left: 0;
-    }
-
-
-    .nav-links ul {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        margin-left: 20px;
-    }
-
-    .navbar .nav-links ul li {
-        margin: 15px 20px;
-        font-weight: 500;
-        font-size: 1.2em;
-    } */
-
-    /* .navbar .logo {
-        position: absolute;
-        top: 30px;
-        left: 20px;
-    } */
 }
