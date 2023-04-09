@@ -220,7 +220,6 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 20px;
 }
 
 .naglowek {
@@ -241,6 +240,7 @@ button {
     flex-wrap: wrap;
     align-items: space-around;
     margin-bottom: 40px;
+    margin-left: 20px;
 }
 
 /* .fiszka {
