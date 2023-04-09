@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto-S OSK</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -46,30 +47,66 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+
+
     <div class="alert">
         <p>Najbliższy kurs - <b>11 kwietnia 2023r.</b></p>
     </div>
 
-    <div class="navbar">
-        <img class="eclipse" src="ikonki/Ellipse 753.png" alt="">
-        <a href="index.html"><img class="logo" href="index.html" src="ikonki/logo-mobile.svg" alt=""></a>
-        <button id="hamburger" class="navbar-toggle">
-            <i class="fas fa-bars"></i>
-        </button>
-    </div>
-    <div class="navbar-in">
-        <div class="navbar-header">
-            <button class="close-btn"><i class="fas fa-times"></i></button>
+
+    <nav class="border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://kzalewski.com/" class="flex items-center">
+                <img src="ikonki/logo-mobile.svg" class="h-8 mr-3" alt="Auto-S Logo" />
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-white bg-gray-700 rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:dark:text-gray-500"
+                            aria-current="page">Główna</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Cennik</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Galeria</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Kadra</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Voucher</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Zapisy</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <ul class="slider-menu">
-            <li><a href="#">Cennik</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Kadra</a></li>
-            <li><a href="#">Voucher</a></li>
-            <li><a href="#">Zapisy</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-    </div>
+    </nav>
+
 
     <div class="hero">
         <div class="left">
@@ -78,7 +115,7 @@
             <h4>Jako szkoła jazdy jesteśmy tu po to, aby doprowadzić Cię do
                 pozytywnie zdanego egzaminu. Razem przejdziemy przez każdy
                 etap szkolenia, tak abyś poczuł się pewnie i bezpiecznie za kierownicą.</h4>
-            <button>ZAPISZ SIĘ</button>
+            <button class="zapisz">ZAPISZ SIĘ</button>
         </div>
         <img src="ikonki/AUTO.png" class="auto-s" alt="">
     </div>
@@ -115,28 +152,28 @@
     <div class="obszar-dzialalnosci">
         <h1 class="naglowek2">Obszar działalności</h1>
         <div class="lokalizacje">
-            <button class="lol">
+            <button class="zapisz">
                 <div class="miejscowosc">Skórzewo</div>
             </button>
-            <button>
+            <button class="zapisz">
                 <div class="miejscowosc">Plewiska</div>
             </button>
-            <button>
+            <button class="zapisz">
                 <div class="miejscowosc">Poznań</div>
             </button>
-            <button>
+            <button class="zapisz">
                 <div class="miejscowosc">Przeźmierowo</div>
             </button>
         </div>
         <h2 class="h2">oraz pozostałe miejscowości w gminach</h2>
         <div class="lokalizacje">
-            <button class="lol">
+            <button class="zapisz">
                 <div class="miejscowosc">Dopiewo</div>
             </button>
-            <button>
+            <button class="zapisz">
                 <div class="miejscowosc">Tarnowo Podgórne</div>
             </button>
-            <button>
+            <button class="zapisz">
                 <div class="miejscowosc">Komorniki</div>
             </button>
         </div>
@@ -198,7 +235,7 @@
             <p class="copy">© Copyright - Ośrodek Szkolenia Kierowców Auto-s.pl</p>
             <p class="copy"> Developed by Krzysztof Zalewski</p>
         </div>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 </body>
 <script>
     const menuHamburger = document.querySelector(".menu-hamburger")
