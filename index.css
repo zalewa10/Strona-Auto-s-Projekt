@@ -6,15 +6,24 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+.desktop {
+    display: none;
+}
+
+
 p {
     font-size: 0.8em;
 }
 
 .alert {
-    height: 20px;
+    height: 30px;
+    background-color: white;
+    width: 100%;
     font-size: 20px;
     text-align: center;
-    margin: 10px 0;
+    position: fixed;
+    padding: 5px;
 }
 
 b {
@@ -53,6 +62,7 @@ h4 {
 
 nav {
     background-color: #e15638;
+    margin-top: 20px;
 }
 
 svg {
@@ -270,12 +280,63 @@ iframe {
 
 @media screen and (min-width:800px) {
 
+    .alert {
+        background-color: #e15638;
+        color: white;
+        margin: 0;
+        padding: 0;
+        height: 40px;
+        padding-top: 5px;
+        font-size: 1.5rem;
+    }
+
+    .active {
+        font-weight: 900;
+
+    }
+
+    nav {
+        background-color: white;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: inline;
+    }
+
     .navbar {
         background-color: rgb(255, 255, 255);
     }
 
     .hamburger-menu {
         display: none;
+    }
+
+
+
+
+
+    iframe {
+        height: 200px;
+        width: 100%;
+        margin-right: 20px;
+    }
+
+
+
+    .headnas {
+        margin-left: 40px;
+    }
+
+    .koszyk {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 0 20px;
     }
 
     .slider-menu {
@@ -285,4 +346,12 @@ iframe {
         right: 0;
         padding: 0;
     }
+
+    .nawi-sek {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+
 }

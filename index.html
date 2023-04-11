@@ -57,10 +57,11 @@
     <nav class="border-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://kzalewski.com/" class="flex items-center">
-                <img src="ikonki/logo-mobile.svg" class="h-8 mr-3" alt="Auto-S Logo" />
+                <img src="ikonki/logo-mobile.svg" class="h-8 mr-3 ml-1 mobile" alt="Auto-S Logo" />
+                <img src="ikonki/logo.svg" class="h-8 mr-3 ml-1 desktop" alt="Auto-S Logo" />
             </a>
             <button data-collapse-toggle="navbar-default" type="button"
-                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none  dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 aria-controls="navbar-default" aria-expanded="false">
 
                 <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
@@ -75,8 +76,8 @@
                     class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
                         <a href="#"
-                            class="block py-2 pl-3 pr-4 text-white bg-gray-700 rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:dark:text-gray-500"
-                            aria-current="page">Główna</a>
+                            class="block py-2 pl-3 pr-4 text-black-700 bg-gray-300 rounded md:bg-transparent md:text-red-700 md:p-0 dark:text-white md:dark:text-blue-500 active"
+                            aria-current="page">Strona Główna</a>
                     </li>
                     <li>
                         <a href="#"
@@ -180,38 +181,41 @@
     </div>
     <div class="o-nas">
         <p class="headnas">Trochę o nas</p>
-        <div class="lista">
-            <div class="plus">
-                <img class="tick" src="ikonki/Tick.svg" alt="">
-                <p>Szkolimy od 18 lat</p>
+        <div class="koszyk">
+            <div class="lista">
+                <div class="plus">
+                    <img class="tick" src="ikonki/Tick.svg" alt="">
+                    <p>Szkolimy od 18 lat</p>
+                </div>
+                <div class="plus">
+                    <img class="tick" src="ikonki/Tick.svg" alt="">
+                    <p>Należymy do szkół o najwyższej zdawalności</p>
+                </div>
+                <div class="plus">
+                    <img class="tick" src="ikonki/Tick.svg" alt="">
+                    <p>Stawiamy na jakość, nie na ilość</p>
+                </div>
+                <div class="plus">
+                    <img class="tick" src="ikonki/Tick.svg" alt="">
+                    <p>Oferujemy profesjonalną kadrę instruktorów</p>
+                </div>
+                <div class="plus">
+                    <img class="tick" src="ikonki/Tick.svg" alt="">
+                    <p>Elastyczne i szybkie terminy jazd</p>
+                </div>
+                <div class="plus">
+                    <img class="tick" src="ikonki/Tick.svg" alt="">
+                    <p>Pracujemy dla was przez 7 dni w tygodniu</p>
+                </div>
             </div>
-            <div class="plus">
-                <img class="tick" src="ikonki/Tick.svg" alt="">
-                <p>Należymy do szkół o najwyższej zdawalności</p>
-            </div>
-            <div class="plus">
-                <img class="tick" src="ikonki/Tick.svg" alt="">
-                <p>Stawiamy na jakość, nie na ilość</p>
-            </div>
-            <div class="plus">
-                <img class="tick" src="ikonki/Tick.svg" alt="">
-                <p>Oferujemy profesjonalną kadrę instruktorów</p>
-            </div>
-            <div class="plus">
-                <img class="tick" src="ikonki/Tick.svg" alt="">
-                <p>Elastyczne i szybkie terminy jazd</p>
-            </div>
-            <div class="plus">
-                <img class="tick" src="ikonki/Tick.svg" alt="">
-                <p>Pracujemy dla was przez 7 dni w tygodniu</p>
+            <div class="youtube">
+                <iframe src="https://www.youtube.com/embed/q3uXXh1sHcI" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <p class="yt">Film promocyjny na platformie YouTube</p>
             </div>
         </div>
-        <div class="youtube">
-            <iframe src="https://www.youtube.com/embed/q3uXXh1sHcI" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </div>
-        <p class="yt">Film promocyjny na platformie YouTube</p>
+
     </div>
     <div class="footer">
         <div class="nawi-sek">
@@ -235,6 +239,7 @@
             <p class="copy">© Copyright - Ośrodek Szkolenia Kierowców Auto-s.pl</p>
             <p class="copy"> Developed by Krzysztof Zalewski</p>
         </div>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 </body>
 <script>
