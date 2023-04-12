@@ -20,6 +20,9 @@
 }
 
 
+.hamburger {
+    z-index: 1;
+}
 
 p {
     font-size: 0.8em;
