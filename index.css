@@ -99,8 +99,12 @@ svg {
     margin-bottom: 100px;
 }
 
-.auto-s {
+.prawo {
     position: relative;
+    width: 100%;
+}
+
+.auto-s {
     float: right;
     max-width: 170px;
 }
@@ -307,7 +311,8 @@ iframe {
 
 
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:768px) {
+
 
     .alert {
         background-color: #e15638;
@@ -317,6 +322,54 @@ iframe {
         height: 40px;
         padding-top: 5px;
         font-size: 1.5rem;
+        z-index: 5;
+    }
+
+
+    .hero {
+        background-color: whitesmoke;
+        padding: 20px 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    h1 {
+        color: #1e1e1e;
+        font-size: 3.5rem;
+        font-weight: 900;
+    }
+
+    h2 {
+        color: #1e1e1e;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    h4 {
+        color: #1e1e1e;
+        width: 60%;
+        font-weight: 400;
+    }
+
+    .left {
+        width: 60%;
+    }
+
+    .prawo {
+        float: right;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+    }
+
+    .auto-s {
+        max-width: 350px;
+
     }
 
     .active {
@@ -326,6 +379,7 @@ iframe {
 
     nav {
         background-color: white;
+        padding: 0 40px;
     }
 
     .mobile {
@@ -344,8 +398,73 @@ iframe {
         display: none;
     }
 
+    .eclipse {
+        display: none;
+    }
 
 
+
+    .wyroznia {
+        background-color: #25252D;
+        padding: 40px 40px;
+        width: 100%;
+    }
+
+    .naglowek {
+        color: white;
+        font-size: 3em;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    .fiszki {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+
+    .fiszka2 {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 300px;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+    }
+
+    .ikonka {
+        width: 50px;
+        margin: 0;
+        margin-bottom: 30px;
+        vertical-align: top;
+    }
+
+    .tytul {
+        color: white;
+        font-weight: 500;
+        text-align: center;
+        font-size: 1.3em;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .opis {
+        color: white;
+        font-weight: 200;
+        text-align: center;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 40px;
+    }
 
 
     iframe {
@@ -381,6 +500,9 @@ iframe {
         flex-direction: row;
         flex-wrap: nowrap;
     }
+
+
+
 
 
 }
