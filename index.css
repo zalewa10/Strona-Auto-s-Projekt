@@ -13,10 +13,12 @@
 
 .mobile {
     margin-left: 15px;
+    margin-top: 5%;
 }
 
 .hamburger {
     z-index: 1;
+    margin-right: 15px;
 }
 
 p {
