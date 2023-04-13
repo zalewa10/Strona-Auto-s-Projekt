@@ -95,6 +95,18 @@ svg {
     margin-bottom: 20px;
 }
 
+.guziki-obszar {
+    color: black;
+    background-color: white;
+    margin-top: 2rem;
+    font-weight: 800;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem 1.5rem;
+    margin-bottom: 20px;
+}
+
 .top {
     margin-bottom: 100px;
 }
@@ -326,6 +338,18 @@ iframe {
     }
 
 
+    .zapisz {
+        background-color: #e15638;
+        color: white;
+        font-size: 1.2em;
+        padding: 0.7rem 2rem;
+    }
+
+    .zapisz:hover {
+        background-color: #dd3131;
+        transition: 0.5s;
+    }
+
     .hero {
         background-color: whitesmoke;
         padding: 20px 60px;
@@ -337,19 +361,19 @@ iframe {
 
     h1 {
         color: #1e1e1e;
-        font-size: 3.5rem;
+        font-size: 4rem;
         font-weight: 900;
     }
 
     h2 {
         color: #1e1e1e;
-        font-size: 3rem;
+        font-size: 3.2rem;
         font-weight: 900;
     }
 
     h4 {
         color: #1e1e1e;
-        width: 60%;
+        width: 70%;
         font-weight: 400;
     }
 
@@ -370,6 +394,39 @@ iframe {
     .auto-s {
         max-width: 350px;
 
+    }
+
+
+    .grafik {
+        padding: 40px;
+    }
+
+    .zdj-opis {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .tło {
+        max-height: 250px;
+    }
+
+
+
+    h1.naglowek2 {
+        font-size: 2.5em;
+        margin-bottom: 80px;
+    }
+
+    .opis2 {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 60px;
+        width: 50%;
+        font-size: 1.3em;
     }
 
     .active {
@@ -406,15 +463,15 @@ iframe {
 
     .wyroznia {
         background-color: #25252D;
-        padding: 40px 40px;
+        padding: 40px 10px;
         width: 100%;
     }
 
     .naglowek {
         color: white;
-        font-size: 3em;
+        font-size: 2.5em;
         margin: 0;
-        margin-bottom: 40px;
+        margin-bottom: 80px;
     }
 
     .fiszki {
@@ -423,7 +480,7 @@ iframe {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: flex-start;
         width: 100%;
     }
@@ -432,14 +489,15 @@ iframe {
     .fiszka2 {
         display: flex;
         flex-wrap: nowrap;
-        max-width: 300px;
+        max-width: 280px;
         justify-content: flex-start;
         align-items: center;
         margin: 0;
+        padding: 0;
     }
 
     .ikonka {
-        width: 50px;
+        width: 45px;
         margin: 0;
         margin-bottom: 30px;
         vertical-align: top;
@@ -449,7 +507,7 @@ iframe {
         color: white;
         font-weight: 500;
         text-align: center;
-        font-size: 1.3em;
+        font-size: 1.2em;
         text-align: left;
         margin: 0;
         padding: 0;
@@ -460,7 +518,8 @@ iframe {
         color: white;
         font-weight: 200;
         text-align: center;
-        width: 90%;
+        font-size: 1em;
+        width: 75%;
         margin: 0;
         padding: 0;
         margin-bottom: 40px;
