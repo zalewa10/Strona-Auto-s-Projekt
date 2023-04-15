@@ -475,8 +475,8 @@ iframe {
 
 
     .wyroznia {
-        background-color: #25252D;
-        padding: 40px 10px;
+        background-color: #1e1e1e;
+        padding: 40px 0;
         width: 100%;
     }
 
@@ -591,7 +591,7 @@ iframe {
 
 
     .o-nas {
-        padding: 20px 40px;
+        padding: 40px;
         background-color: whitesmoke;
     }
 
@@ -606,10 +606,11 @@ iframe {
 
     .headnas {
         margin: 0;
-        font-size: 2.5em;
-        text-align: center;
+        font-size: 2.8em;
+        text-align: left;
+        margin-left: 40px;
         margin-top: 30px;
-        margin-bottom: 80px;
+        margin-bottom: 20px;
     }
 
     .tick {
@@ -640,16 +641,19 @@ iframe {
     }
 
     .obszar-dzialalnosci-desktop {
-        padding: 20px 40px;
+        padding: 40px;
         background-color: #1e1e1e;
     }
 
-    .podzial {
+    /* .podzial {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
-    }
+        margin-bottom: 20px;
+        background-color: #e15638;
+        border-radius: 20px;
+    } */
 
     .grafik-naglowek {
         color: black;
@@ -664,13 +668,13 @@ iframe {
         font-size: 1.3em;
     }
 
-    .lewa-strona {
+    /* .lewa-strona {
         width: 40%;
     }
 
     .prawa-strona {
         width: 60%;
-    }
+    } */
 
     .naglowek3 {
         font-size: 2.5rem;
@@ -680,11 +684,83 @@ iframe {
         margin-bottom: 80px;
     }
 
+    .miejsca-naglowek {
+        color: white;
+        font-weight: 500;
+        font-size: 1.4em;
+        margin-bottom: 30px;
+    }
+
+    .miejsca p {
+        margin-bottom: 15px;
+        font-size: 1.4em;
+    }
+
     .obszar-naglowek {
         color: white;
         font-size: 1.5em;
         font-weight: 600;
         margin: 20px 0;
     }
+
+
+    .grafmap {
+        background-color: white;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 90%;
+        background-color: white;
+        margin-bottom: 70px;
+        min-height: 390px;
+        justify-content: space-between;
+    }
+
+
+    .content {
+        padding: 20px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content img {
+        max-height: 350px;
+    }
+
+    .content iframe {
+        max-height: 350px;
+        width: 100%;
+    }
+
+    .text {
+        padding: 20px 30px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .tytul-card {
+        font-weight: 700;
+        color: black;
+        font-size: 2.5rem;
+    }
+
+    .opis-card {
+        font-weight: 400;
+        color: #909090;
+        font-size: 1.3rem;
+        margin-top: 30px;
+    }
+
 
 }
