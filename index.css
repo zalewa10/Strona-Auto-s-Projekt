@@ -370,14 +370,15 @@ iframe {
 
     h2 {
         color: #1e1e1e;
-        font-size: 3.2rem;
+        font-size: 3.3rem;
         font-weight: 900;
     }
 
     h4 {
         color: #1e1e1e;
-        width: 70%;
-        font-weight: 400;
+        width: 75%;
+        font-size: 1.1em;
+        font-weight: 500;
     }
 
     .left {
@@ -435,9 +436,19 @@ iframe {
 
     }
 
+
+    .block {
+        font-size: 1.2em;
+        background-color: white;
+    }
+
     nav {
         background-color: white;
         padding: 0 40px;
+    }
+
+    .trala {
+        background-color: white;
     }
 
     .mobile {
@@ -528,12 +539,20 @@ iframe {
 
 
     iframe {
-        height: 200px;
-        width: 100%;
+
         margin-right: 20px;
     }
 
+    .youtube {
+        margin: 0;
+        margin-left: auto;
+        justify-content: flex-end;
+    }
 
+    .yt {
+        font-size: 1rem;
+        font-weight: 400;
+    }
 
     .headnas {
         margin-left: 40px;
@@ -543,7 +562,7 @@ iframe {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-between;
+
         margin: 0 20px;
     }
 
@@ -561,8 +580,46 @@ iframe {
         flex-wrap: nowrap;
     }
 
+    .footer {
+        padding: 10px 40px;
+    }
 
 
 
+    .o-nas {
+        padding: 20px 40px;
+    }
+
+    .head-sek {
+        font-size: 1.3rem;
+
+    }
+
+    .headnas {
+        font-size: 2.5em;
+        text-align: left;
+    }
+
+    .tick {
+        width: 35px;
+    }
+
+    .plus p {
+        font-size: 1.2rem;
+    }
+
+    .opis-sek {
+        font-size: 1rem;
+    }
+
+    .copyright {
+        width: 100%;
+        display: inline;
+        margin: 0;
+    }
+
+    .copy {
+        font-size: 1em;
+    }
 
 }
