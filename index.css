@@ -220,7 +220,7 @@ h1.naglowek2 {
     color: white;
     margin-top: 30px;
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .lista {
@@ -250,7 +250,6 @@ h1.naglowek2 {
     justify-content: center;
     align-items: center;
     margin: 50px 0px 5px 0;
-
 }
 
 iframe {
@@ -376,8 +375,8 @@ iframe {
 
     h4 {
         color: #1e1e1e;
-        width: 75%;
-        font-size: 1.1em;
+        width: 85%;
+        font-size: 1.3rem;
         font-weight: 500;
     }
 
@@ -400,12 +399,13 @@ iframe {
 
     .grafik {
         padding: 40px;
+        background-color: whitesmoke;
     }
 
     .zdj-opis {
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .tło {
@@ -429,6 +429,7 @@ iframe {
         padding: 0 60px;
         width: 50%;
         font-size: 1.3em;
+        color: black;
     }
 
     .active {
@@ -481,14 +482,14 @@ iframe {
 
     .naglowek {
         color: white;
-        font-size: 2.5em;
+        font-size: 2.5rem;
         margin: 0;
         margin-bottom: 80px;
     }
 
     .fiszki {
         margin: 0;
-        padding: 0;
+        padding: 0 20px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -501,7 +502,7 @@ iframe {
     .fiszka2 {
         display: flex;
         flex-wrap: nowrap;
-        max-width: 280px;
+        max-width: 300px;
         justify-content: flex-start;
         align-items: center;
         margin: 0;
@@ -518,35 +519,47 @@ iframe {
     .tytul {
         color: white;
         font-weight: 500;
-        text-align: center;
-        font-size: 1.2em;
+        font-size: 1.4rem;
         text-align: left;
         margin: 0;
         padding: 0;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .opis {
-        color: white;
-        font-weight: 200;
+        color: rgb(204, 204, 204);
+        font-weight: 400;
         text-align: center;
-        font-size: 1em;
-        width: 75%;
+        font-size: 1.2em;
+        width: 100%;
         margin: 0;
         padding: 0;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+    }
+
+    .koszyk {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 0 20px;
     }
 
 
-    iframe {
-
-        margin-right: 20px;
-    }
 
     .youtube {
         margin: 0;
         margin-left: auto;
-        justify-content: flex-end;
+        justify-content: center;
+        padding-top: 20px;
+        width: 50%;
+    }
+
+    iframe {
+        height: 100%;
+    }
+
+    .lista {
+        width: 50%;
     }
 
     .yt {
@@ -554,17 +567,6 @@ iframe {
         font-weight: 400;
     }
 
-    .headnas {
-        margin-left: 40px;
-    }
-
-    .koszyk {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-
-        margin: 0 20px;
-    }
 
     .slider-menu {
         display: flex;
@@ -578,9 +580,11 @@ iframe {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        justify-content: space-between;
     }
 
     .footer {
+        margin: 0;
         padding: 10px 40px;
     }
 
@@ -588,6 +592,11 @@ iframe {
 
     .o-nas {
         padding: 20px 40px;
+        background-color: whitesmoke;
+    }
+
+    .koszyk {
+        padding-bottom: 40px;
     }
 
     .head-sek {
@@ -596,8 +605,11 @@ iframe {
     }
 
     .headnas {
+        margin: 0;
         font-size: 2.5em;
-        text-align: left;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 80px;
     }
 
     .tick {
@@ -620,6 +632,59 @@ iframe {
 
     .copy {
         font-size: 1em;
+    }
+
+
+    .obszar-dzialalnosci {
+        display: none;
+    }
+
+    .obszar-dzialalnosci-desktop {
+        padding: 20px 40px;
+        background-color: #1e1e1e;
+    }
+
+    .podzial {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .grafik-naglowek {
+        color: black;
+        font-weight: 900;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 80px;
+    }
+
+    .miejsca p {
+        color: white;
+        font-size: 1.3em;
+    }
+
+    .lewa-strona {
+        width: 40%;
+    }
+
+    .prawa-strona {
+        width: 60%;
+    }
+
+    .naglowek3 {
+        font-size: 2.5rem;
+        color: white;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .obszar-naglowek {
+        color: white;
+        font-size: 1.5em;
+        font-weight: 600;
+        margin: 20px 0;
     }
 
 }
