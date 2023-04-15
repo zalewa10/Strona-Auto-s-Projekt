@@ -53,30 +53,18 @@ h2 {
 }
 
 
-.góra {
-    border: none;
-    padding-top: 30px;
-}
-
-.eclipse {
-    position: absolute;
-    float: right;
-    right: 0;
-    top: 0;
-}
-
 
 h4 {
     color: white;
     font-weight: 400;
     font-size: 1rem;
     margin-top: 30px;
-    width: 74%;
 }
 
 nav {
     background-color: #e15638;
-    margin-top: 20px;
+    margin-top: 25px;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 svg {
@@ -111,14 +99,10 @@ svg {
     margin-bottom: 100px;
 }
 
-.prawo {
-    position: relative;
-    width: 100%;
-}
+
 
 .auto-s {
-    float: right;
-    max-width: 170px;
+    display: none;
 }
 
 .hero {
@@ -154,7 +138,7 @@ svg {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: space-around;
+    justify-content: center;
     margin-bottom: 40px;
     margin-left: 20px;
 }
@@ -247,8 +231,8 @@ h1.naglowek2 {
 }
 
 .lista p {
-    font-size: 1em;
-    font-weight: 400;
+    font-size: 0.9rem;
+    font-weight: 500;
     color: #1e1e1e;
 }
 
@@ -266,17 +250,27 @@ h1.naglowek2 {
     justify-content: center;
     align-items: center;
     margin: 50px 0px 5px 0;
+
 }
 
 iframe {
-    width: 85%;
+    padding: 0 30px;
+    width: 100%;
 }
 
 .yt {
     text-align: right;
-    margin-right: 30px;
+    margin-top: 10px;
+    width: 80%;
     font-weight: 400;
 }
+
+
+.tło {
+    margin-top: 40px;
+    padding: 0px 20px;
+}
+
 
 .footer {
     margin-top: 30px;
@@ -323,8 +317,16 @@ iframe {
 
 
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1024px) {
+    html {
+        max-width: 1440px;
+        margin: auto;
+    }
 
+
+    nav {
+        margin-top: 40px;
+    }
 
     .alert {
         background-color: #e15638;
@@ -335,6 +337,7 @@ iframe {
         padding-top: 5px;
         font-size: 1.5rem;
         z-index: 5;
+        max-width: 1440px;
     }
 
 
@@ -382,17 +385,14 @@ iframe {
     }
 
     .prawo {
-        float: right;
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
         width: 40%;
     }
 
     .auto-s {
-        max-width: 350px;
+        display: inline;
 
     }
 
@@ -409,6 +409,7 @@ iframe {
 
     .tło {
         max-height: 250px;
+        margin-top: 0;
     }
 
 
