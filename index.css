@@ -448,6 +448,11 @@ iframe {
         padding: 0 40px;
     }
 
+    .góra {
+        margin-left: 20px;
+        padding-left: 0;
+    }
+
     .trala {
         background-color: white;
     }
@@ -741,6 +746,8 @@ iframe {
         width: 100%;
     }
 
+
+
     .text {
         padding: 20px 30px;
         width: 50%;
@@ -762,5 +769,8 @@ iframe {
         margin-top: 30px;
     }
 
-
+    #map {
+        width: 600px;
+        height: 400px;
+    }
 }
