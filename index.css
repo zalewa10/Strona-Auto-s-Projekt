@@ -741,12 +741,6 @@ iframe {
         max-height: 350px;
     }
 
-    .content iframe {
-        max-height: 350px;
-        width: 100%;
-    }
-
-
 
     .text {
         padding: 20px 30px;
@@ -772,5 +766,6 @@ iframe {
     #map {
         width: 600px;
         height: 400px;
+        z-index: 1;
     }
 }
