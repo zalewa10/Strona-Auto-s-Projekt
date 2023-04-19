@@ -313,6 +313,66 @@ iframe {
     padding: 20px 0;
 }
 
+#map {
+    width: 600px;
+    height: 300px;
+    z-index: 1;
+}
+
+.grafmap {
+    background-color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 90%;
+    background-color: white;
+    margin-bottom: 60px;
+    justify-content: space-between;
+}
+
+
+.content {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content img {
+    max-height: 300px;
+}
+
+
+.text {
+    padding: 20px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tytul-card {
+    font-weight: 700;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.opis-card {
+    font-weight: 400;
+    color: #909090;
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+
 
 
 
