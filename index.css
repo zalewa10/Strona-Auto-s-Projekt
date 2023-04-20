@@ -6,6 +6,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.alert {
+    background-color: white;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    position: fixed;
+    padding: 5px;
+}
 
 .desktop {
     display: none;
@@ -25,14 +33,7 @@ p {
     font-size: 0.8em;
 }
 
-.alert {
-    background-color: white;
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
-    position: fixed;
-    padding: 5px;
-}
+
 
 b {
     font-weight: 800;
@@ -348,6 +349,7 @@ iframe {
 
 .content img {
     max-height: 300px;
+    border-radius: 15px;
 }
 
 
@@ -383,10 +385,6 @@ iframe {
     }
 
 
-    nav {
-        margin-top: 40px;
-    }
-
     .alert {
         background-color: #e15638;
         color: white;
@@ -399,6 +397,9 @@ iframe {
         max-width: 1440px;
     }
 
+    nav {
+        margin-top: 40px;
+    }
 
     .zapisz {
         background-color: #e15638;
