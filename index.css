@@ -11,9 +11,9 @@
     width: 100%;
     font-size: 20px;
     text-align: center;
-    position: fixed;
     padding: 5px;
 }
+
 
 .desktop {
     display: none;
@@ -64,7 +64,6 @@ h4 {
 
 nav {
     background-color: #e15638;
-    margin-top: 25px;
     border-bottom: 1px solid rgb(0, 0, 0);
 }
 
@@ -72,9 +71,17 @@ svg {
     color: white;
 }
 
+.hero {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
 .zapisz {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: #e15638;
     margin-top: 2rem;
     font-weight: 800;
     font-size: 1em;
@@ -106,13 +113,6 @@ svg {
     display: none;
 }
 
-.hero {
-    padding: 0px 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: #e15638;
-}
 
 
 
@@ -375,15 +375,14 @@ iframe {
     margin-top: 30px;
 }
 
+form {
+    padding: 60px 80px;
+    background-color: whitesmoke;
+}
 
 
 
 @media screen and (min-width:1024px) {
-    html {
-        max-width: 1440px;
-        margin: auto;
-    }
-
 
     .alert {
         background-color: #e15638;
@@ -397,8 +396,16 @@ iframe {
         max-width: 1440px;
     }
 
+    html {
+        max-width: 1440px;
+        margin: auto;
+    }
+
+
     nav {
-        margin-top: 40px;
+        background-color: white;
+        padding: 0 40px;
+        margin-top: 0;
     }
 
     .zapisz {
@@ -414,12 +421,14 @@ iframe {
     }
 
     .hero {
+        background: none;
         background-color: whitesmoke;
         padding: 20px 60px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
+        filter: none;
     }
 
     h1 {
@@ -502,11 +511,6 @@ iframe {
     .block {
         font-size: 1.2em;
         background-color: white;
-    }
-
-    nav {
-        background-color: white;
-        padding: 0 40px;
     }
 
     .góra {
@@ -828,5 +832,23 @@ iframe {
         width: 600px;
         height: 400px;
         z-index: 1;
+    }
+
+    .cenniki {
+        background-color: whitesmoke;
+    }
+
+    .galeria {
+        background-color: whitesmoke;
+        padding: 20px 40px;
+    }
+
+    .naglowki {
+        margin-top: 20px;
+        background-color: whitesmoke;
+    }
+
+    button {
+        transition: 0.3s;
     }
 }
