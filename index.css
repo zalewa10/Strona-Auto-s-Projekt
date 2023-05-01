@@ -373,11 +373,18 @@ iframe {
 }
 
 form {
-    padding: 60px 80px;
+    padding: 0px 80px;
     background-color: whitesmoke;
 }
 
+.tytul-galeria {
+    margin-top: 60px;
+}
 
+.cenniki {
+    background-color: whitesmoke;
+    margin: 0;
+}
 
 @media screen and (min-width:1024px) {
 

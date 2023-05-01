@@ -78,7 +78,7 @@
 
                     <li>
                         <a href="index.html"
-                            class="block py-2 pl-3 pr-4 text-black-700 bg-gray-300 rounded lg:bg-transparent lg:text-red-700 lg:p-0 dark:text-white lg:dark:text-blue-500"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-200 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-700 lg:p-0 dark:text-white lg:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
                             aria-current="page">Strona Główna</a>
                     </li>
                     <li>
@@ -99,7 +99,7 @@
                     </li>
                     <li>
                         <a href="zapisy.html"
-                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-200 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-700 lg:p-0 dark:text-white lg:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent active">Zapisy</a>
+                            class="block py-2 pl-3 pr-4 text-black-700 bg-gray-300 rounded lg:bg-transparent lg:text-red-700 lg:p-0 dark:text-white lg:dark:text-blue-500 active">Zapisy</a>
                     </li>
                     <li>
                         <a href="kontakt.html"
@@ -109,59 +109,65 @@
             </div>
         </div>
     </nav>
-
-    <form>
-        <label for="email-address-icon"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Twój
-            Email</label>
-        <div class="relative">
-            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor"
-                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                </svg>
+    <section class="bg-white dark:bg-gray-900 cenniki">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Skontaktuj się z
+                    Nami</h2>
             </div>
-            <input type="text" id="email-address-icon"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="name@flowbite.com">
+            <form>
+                <div class="mb-6">
+                    <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Imię
+                        i
+                        Nazwisko
+                    </label>
+                    <input type="text" id="text"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                        required>
+                </div>
+                <div class="mb-6">
+                    <label for="text"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Adres
+                        e-mail
+                    </label>
+                    <input type="text" id="text"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                        required>
+                </div>
+                <div class="mb-6">
+                    <label for="tel" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Nr
+                        telefonu
+                    </label>
+                    <input type="tel" id="tel"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                        required placeholder="">
+                </div>
+
+                <label for="countries"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Wybierz
+                    kurs:
+                </label>
+                <select id="countries"
+                    class="bg-gray-50 mb-6 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option>Standardowy kat.B</option>
+                    <option>Express kat.B</option>
+                    <option>Rozszerzony kat.B</option>
+                    <option>Automat kat.B</option>
+                    <option>Uzupełnienie z kat. B1 na B</option>
+                </select>
+
+                <label for="message"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Wiadomość</label>
+                <textarea id="message" rows="4"
+                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Zostaw nam swoją wiadomość..."></textarea>
+
+                <button type="submit"
+                    class="text-white bg-red-600 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 zapisz">Wyślij
+                    zgłoszenie</button>
+            </form>
         </div>
-
-        <div class="mb-6">
-            <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Imię i
-                Nazwisko
-            </label>
-            <input type="text" id="text"
-                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-                required>
-        </div>
-
-        <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Wybierz
-            kurs:
-        </label>
-        <select id="countries"
-            class="bg-gray-50 mb-2 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-            <option>Standardowy kat.B</option>
-            <option>Express kat.B</option>
-            <option>Rozszerzony kat.B</option>
-            <option>Automat kat.B</option>
-            <option>Uzupełnienie z kat. B1 na B</option>
-        </select>
-
-
-        <label for="message"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Wiadomość</label>
-        <textarea id="message" rows="4"
-            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Zostaw nam swoją wiadomość..."></textarea>
-
-        <button type="submit"
-            class="text-white bg-red-600 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 naglowki">Wyślij
-            zgłoszenie</button>
-    </form>
-
-
-
+    </section>
 
 
 
