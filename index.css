@@ -293,13 +293,13 @@ iframe {
     color: #909090;
     font-weight: 300;
     margin-bottom: 5px;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .copyright {
     color: white;
     margin: 0 30px;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 200;
     text-align: center;
     padding-bottom: 10px;
@@ -410,6 +410,37 @@ form {
     margin: 40px 0 0 0;
     font-size: 1em;
 }
+
+.uwaga {
+    background-color: #e15638;
+}
+
+.podpis-white {
+    color: white;
+    margin: 40px 0 0 0;
+    font-size: 1em;
+}
+
+.nagłówek-white {
+    color: white;
+}
+
+.podpis2 {
+    font-size: 1em;
+}
+
+.tlo {
+    background-color: whitesmoke;
+}
+
+.textt {
+    width: 100%;
+    padding: 20px 40px;
+}
+
+
+
+
 
 @media screen and (min-width:1024px) {
 
@@ -685,7 +716,7 @@ form {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .footer {
@@ -732,8 +763,10 @@ form {
 
     .copyright {
         width: 100%;
-        display: inline;
+        display: flex;
+        justify-content: space-between;
         margin: 0;
+        padding: 0 100px;
     }
 
     .copy {
@@ -925,10 +958,21 @@ form {
 
     .podpis {
         font-size: 1.4em;
+        margin-top: 50px;
     }
 
-    .textt {
-        width: 100%;
-        padding: 20px 40px;
+
+
+    .podpis-white {
+        font-size: 1.4em;
+    }
+
+    .szerzej {
+        width: 80%;
+        padding: 60px 0 10px 0;
+    }
+
+    .podpis2 {
+        font-size: 1.4em;
     }
 }

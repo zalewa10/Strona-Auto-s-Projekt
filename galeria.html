@@ -15,7 +15,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 </head>
 
 <body>
@@ -109,148 +108,165 @@
             </div>
         </div>
     </nav>
+    <div class="tlo">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <div class="mx-auto text-center mb-8 lg:mb-12">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white środek">Zobacz jak
+                    działamy
+                </h2>
+            </div>
 
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white środek">Zobacz jak
-                działamy
-            </h2>
-        </div>
+            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="ikonki/1.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="ikonki/2.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="ikonki/3.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="ikonki/4.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="ikonki/5.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
 
-        <div id="default-carousel" class="relative w-full" data-carousel="slide">
-            <!-- Carousel wrapper -->
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="ikonki/kia1.jpg"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
-                <!-- Item 2 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="ikonki/kia2.jpg"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                        data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                        data-carousel-slide-to="4"></button>
                 </div>
-                <!-- Item 3 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="ikonki/kia3.jpg"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+            <div class="mx-auto text-center mb-8 lg:mb-12 szerzej">
+                <h2
+                    class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white tytul-galeria środek">
+                    Sala
+                    wykładowa
+                </h2>
+                <p class="mb-5 font-light text-gray-500 sm:text-xl podpis2"> Posiadamy własną, klimatyzowaną i
+                    odpowiednio
+                    wyposażoną salę wykładową w Skórzewie.
+                    Prowadzimy zajęcia teoretyczne dla pojedynczych osób oraz zorganizowanych grup.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="ikonki/12.jpg" alt="">
                 </div>
-                <!-- Item 4 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="ikonki/plac.jpg"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="ikonki/14.jpg" alt="">
                 </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="ikonki/16.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="ikonki/19.jpg" alt="">
+                </div>
+            </div>
 
+            <div class="mx-auto text-center mb-8 lg:mb-12 szerzej">
+                <h2
+                    class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white tytul-galeria środek">
+                    Plac
+                    Manewrowy
+                </h2>
+                <p class="mb-5 font-light text-gray-500 sm:text-xl podpis2"> Dysponujemy własnym, profesjonalnie
+                    urządzonym,
+                    wyposażonym i oświetlonym placem manewrowym w Skórzewie.
+
+                    Obiekt został przygotowany na wzór placu jaki znajduje się w Wojewódzkim Ośrodku Ruchu
+                    Drogowego-Poznań.
+                </p>
             </div>
-            <!-- Slider indicators -->
-            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                    data-carousel-slide-to="0"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                    data-carousel-slide-to="1"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                    data-carousel-slide-to="2"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
-                    data-carousel-slide-to="3"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
-                    data-carousel-slide-to="4"></button>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="ikonki/kia1.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="ikonki/kia2.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="ikonki/4.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="ikonki/3.jpg" alt="">
+                </div>
             </div>
-            <!-- Slider controls -->
-            <button type="button"
-                class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                data-carousel-prev>
-                <span
-                    class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
-                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
-                        </path>
-                    </svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button"
-                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                data-carousel-next>
-                <span
-                    class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
-                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
+
+            <div class="mx-auto text-center mb-8 lg:mb-12 szerzej">
+                <h2
+                    class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white tytul-galeria środek">
+                    Pojazdy szkoleniowe
+                </h2>
+                <p class="mb-5 font-light text-gray-500 sm:text-xl podpis2">Kia Rio 4 (wersja egzaminacyjna)
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="ikonki/5.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="ikonki/6.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="ikonki/2.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="ikonki/1.jpg" alt="">
+                </div>
+            </div>
+
+
         </div>
-        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white tytul-galeria środek">
-                Sala
-                wykładowa
-            </h2>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="ikonki/12.jpg" alt="">
-            </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="ikonki/14.jpg" alt="">
-            </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="ikonki/16.jpg" alt="">
-            </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="ikonki/19.jpg" alt="">
-            </div>
-        </div>
-
-        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white tytul-galeria środek">
-                Plac
-                Manewrowy
-            </h2>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="ikonki/kia1.jpg" alt="">
-            </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="ikonki/kia2.jpg" alt="">
-            </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="ikonki/4.jpg" alt="">
-            </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="ikonki/3.jpg" alt="">
-            </div>
-        </div>
-
-        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white tytul-galeria środek">
-                Nasza
-                Flota
-            </h2>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="ikonki/5.jpg" alt="">
-            </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="ikonki/6.jpg" alt="">
-            </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="ikonki/2.jpg" alt="">
-            </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="ikonki/1.jpg" alt="">
-            </div>
-        </div>
-
-
     </div>
-
     <div class="footer">
         <div class="nawi-sek">
             <div class="sekcja">
@@ -262,18 +278,11 @@
             </div>
 
             <div class="sekcja">
-                <p class="head-sek">KONTAKT</p>
-                <p class="opis-sek">Godziny pracy biura:</p>
-                <p class="opis-sek">pon-pt 8:00 - 16:00</p>
-                <p class="opis-sek">tel. 668 987 001</p>
-                <p class="opis-sek">mail: kontakt@auto-s.pl</p>
-            </div>
-            <div class="sekcja">
-                <p class="head-sek">SZKOŁA NAUKI JAZDY</p>
-                <p class="opis-sek">Ośrodek Szkolenia Kierowców AUTO-S</p>
-                <p class="opis-sek">ul.Jesienna 18</p>
-                <p class="opis-sek">60-185, Skórzewo</p>
-                <p class="opis-sek">Właściciel: Sławomir Pługowski</p>
+                <p class="head-sek">INFORMACJE DO PŁATNOŚCI</p>
+                <p class="opis-sek">Numer konta:</p>
+                <p class="opis-sek">05 1240 6540 1111 0011 2212 8760</p>
+                <p class="opis-sek">Blik: tel. 509 211 676</p>
+                <p class="opis-sek">Tytuł przelewu: imię, nazwisko, wybrany kurs</p>
             </div>
 
             <div class="sekcja">
@@ -283,13 +292,14 @@
                 <p class="opis-sek">tel. 668 987 001</p>
                 <p class="opis-sek">mail: kontakt@auto-s.pl</p>
             </div>
+
+
         </div>
         <div class="copyright">
             <p class="copy">© Copyright - Ośrodek Szkolenia Kierowców Auto-s.pl</p>
+            <p class="copy">Design i wykonanie: <a href="#">Krzysztof Zalewski</a></p>
         </div>
 
-
-        <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 </body>
 <script>
