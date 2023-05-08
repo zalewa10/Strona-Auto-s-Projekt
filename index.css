@@ -376,7 +376,7 @@ iframe {
 }
 
 form {
-    padding: 0px 80px;
+    padding: 0px 40px;
     background-color: whitesmoke;
 }
 
@@ -393,6 +393,22 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.mail {
+    color: #dd3131;
+    text-decoration: underline;
+}
+
+.lewo-kontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.podpis {
+    margin: 40px 0 0 0;
+    font-size: 1em;
 }
 
 @media screen and (min-width:1024px) {
@@ -886,4 +902,28 @@ form {
         margin: 0 10px;
     }
 
+    form {
+        padding: 0 80px;
+    }
+
+    .kontakt {
+        display: flex;
+    }
+
+    .lewo-kontakt {
+        width: 50%;
+    }
+
+    .prawo-kontakt {
+        width: 50%;
+    }
+
+    .tytul-kontakt {
+        font-size: 2em;
+        width: 100%;
+    }
+
+    .podpis {
+        font-size: 1.4em;
+    }
 }
