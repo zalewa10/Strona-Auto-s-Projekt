@@ -12,6 +12,7 @@ var locations = [
   ["Os.Kwiatowe - parking kościół", 52.383611, 16.820688],
   ["Skórzewo - Biuro i Sala Wykładowa AUTO-S", 52.400547, 16.784312],
   ["Dąbrówka - parking stacja Orlen", 52.381938, 16.744593],
+  ["Dąbrowa - parking Chata Polska", 52.396823, 16.757426],
 ];
 
 var map = L.map('map').setView([52.402651, 16.826466], 12);
