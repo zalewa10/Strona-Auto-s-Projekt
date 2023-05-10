@@ -328,6 +328,15 @@ iframe {
     align-items: center;
 }
 
+.grafmap-kadra {
+    background-color: whitesmoke;
+    padding: 20px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -367,6 +376,17 @@ iframe {
     font-size: 2rem;
     text-align: center;
 }
+
+.podtytul-card {
+    font-weight: 600;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
 
 .opis-card {
     font-weight: 400;
@@ -438,7 +458,9 @@ form {
     padding: 20px 40px;
 }
 
-
+.instruktorzy {
+    justify-content: flex-start;
+}
 
 
 
@@ -850,6 +872,14 @@ form {
         align-items: center;
     }
 
+    .grafmap-kadra {
+        background-color: whitesmoke;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .card {
         display: flex;
         flex-direction: row;
@@ -881,6 +911,14 @@ form {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    .instruktorzy {
+        padding: 20px 30px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .tytul-card {
@@ -974,5 +1012,10 @@ form {
 
     .podpis2 {
         font-size: 1.4em;
+    }
+
+    .linia {
+        margin: 20px 0;
+        border: 1px solid #ffffff62;
     }
 }
