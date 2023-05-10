@@ -29,3 +29,4 @@ for (var i = 0; i < locations.length; i++) {
     .bindPopup(locations[i][0])
     .addTo(map);
 }
+
