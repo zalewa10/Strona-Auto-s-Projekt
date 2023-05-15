@@ -492,7 +492,20 @@ form {
     justify-content: flex-start;
 }
 
+.platnosc {
+    background-color: #1e1e1e;
+    margin-left: 0;
+    margin-right: 0;
 
+}
+
+.biel {
+    color: rgb(204, 204, 204);
+}
+
+.biel:nth-child(1) {
+    color: white;
+}
 
 @media screen and (min-width:1024px) {
 
