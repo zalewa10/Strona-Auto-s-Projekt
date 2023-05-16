@@ -10,7 +10,7 @@ var locations = [
   ["Ogrody - parking ul. Nowina", 52.416835, 16.878214],
   ["Os.Kwiatowe - parking Netto", 52.378642, 16.823928],
   ["Os.Kwiatowe - parking kościół", 52.383611, 16.820688],
-  ["Biuro i Sala Wykładowa AUTO-S, ul.Jesienna 18, Skórzewo", 52.400547, 16.784312],
+  ["Biuro i Sala Wykładowa AUTO-S ul.Jesienna 18, Skórzewo", 52.400547, 16.784312],
   ["Dąbrówka - parking stacja Orlen", 52.381938, 16.744593],
   ["Dąbrowa - parking Chata Polska", 52.396823, 16.757426],
 ];

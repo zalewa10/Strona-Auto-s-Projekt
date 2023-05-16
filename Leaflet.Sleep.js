@@ -118,7 +118,7 @@ L.Map.Sleep = L.Handler.extend({
     } else if (this._map.options.wakeMessage) {
       noteString = this._map.options.wakeMessage;
     } else if (this._map.options.hoverToWake) {
-      noteString = 'click or hover to wake';
+      noteString = 'Kliknij lub najedź';
     } else {
       noteString = 'Kliknij, aby wybudzić';
     }

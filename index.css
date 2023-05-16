@@ -328,7 +328,6 @@ iframe {
 
 .copyright {
     color: white;
-    margin: 0 30px;
     font-size: 1em;
     font-weight: 200;
     text-align: center;
@@ -506,6 +505,37 @@ form {
 
 .biel:nth-child(1) {
     color: white;
+}
+
+.praca {
+    text-align: center;
+    font-weight: 400;
+    color: #dd3131;
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+.imie {
+    text-align: center;
+    font-weight: 900;
+    color: black;
+    margin-top: 5px;
+    font-size: 1.5em;
+}
+
+.wlasciciel {
+    text-align: center;
+    font-weight: 900;
+    color: black;
+    font-size: 1.5em;
+}
+
+.fb {
+    color: white;
+    text-decoration: underline 2px blue;
+    font-weight: 400;
+    font-size: 1.3em;
+    margin-bottom: 30px;
 }
 
 @media screen and (min-width:1024px) {
@@ -831,9 +861,10 @@ form {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin: 0;
-        padding: 0 100px;
+        flex-direction: column;
     }
+
+
 
     .copy {
         font-size: 1em;
@@ -962,7 +993,7 @@ form {
         width: 60%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .tytul-card {
@@ -1060,5 +1091,17 @@ form {
     .linia {
         margin: 20px 0;
         border: 1px solid #ffffff62;
+    }
+
+    .praca {
+        font-size: 1.5em;
+    }
+
+    .imie {
+        font-size: 1.8em;
+    }
+
+    .wlasciciel {
+        font-size: 1.8em;
     }
 }
