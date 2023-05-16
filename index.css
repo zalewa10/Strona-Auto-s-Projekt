@@ -349,6 +349,7 @@ iframe {
     z-index: 1;
 }
 
+
 .grafmap {
     background-color: whitesmoke;
     padding: 20px;
@@ -518,11 +519,11 @@ form {
         padding-top: 5px;
         font-size: 1.5rem;
         z-index: 5;
-        max-width: 1440px;
+        max-width: 2560px;
     }
 
     html {
-        max-width: 1440px;
+        max-width: 2560px;
         margin: auto;
     }
 
