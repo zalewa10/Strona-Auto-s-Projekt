@@ -8,7 +8,11 @@
 }
 
 select:invalid {
-    color: gray;
+    color: grey;
+}
+
+select {
+    color: black;
 }
 
 #progress {
