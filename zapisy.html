@@ -117,14 +117,14 @@
                     zgłoszeniowy</h2>
             </div>
             <form action="https://formsubmit.co/zalewastriker10@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="Nowe zgłoszenie ze strony Auto-s!">
+                <input type="hidden" name="_subject" value="Nowe zgloszenie ze strony Auto-s!">
                 <input type="hidden" name="_next" value="https://kzalewski.com/potwierdzenie.html">
                 <div class="mb-6">
                     <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Imię
                         i
                         Nazwisko
                     </label>
-                    <input type="text" id="text" name="Imię i Nazwisko"
+                    <input type="text" id="text" name="Imie i Nazwisko"
                         class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                         required>
                 </div>
@@ -150,7 +150,7 @@
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Wybierz
                     kurs:
                 </label>
-                <select id="countries" required name="Wybrany kurs:"
+                <select id="countries" required name="Wybrany kurs"
                     class="bg-gray-50 mb-6 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                     <option value="" disabled selected>Wybierz opcję kursu:</option>
                     <option>Podstawowy - skrzynia manualna</option>
@@ -167,7 +167,7 @@
 
                 <label for="message"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Wiadomość</label>
-                <textarea id="message" rows="4" name="Wiadomość"
+                <textarea id="message" rows="4" name="Wiadomosc"
                     class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="Zostaw nam swoją wiadomość..."></textarea>
 
@@ -190,6 +190,61 @@
             </form>
         </div>
     </section>
+
+
+
+    <form action="https://formsubmit.co/zalewastriker10@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nowe zgloszenie ze strony Auto-s!">
+        <input type="hidden" name="_next" value="https://kzalewski.com/potwierdzenie.html">
+        <input type="text" id="text" name="Imie i Nazwisko" required>
+
+        <label for="email">Adres
+            e-mail
+        </label>
+        <input type="email" id="email" name="Adres e-mail" required>
+
+
+        <label for="tel">Nr
+            telefonu
+        </label>
+        <input type="tel" id="tel" name="Numer telefonu" required placeholder="">
+
+
+        <label for="countries">Wybierz
+            kurs:
+        </label>
+        <select id="countries" required name="Wybrany kurs">
+            <option value="" disabled selected>Wybierz opcję kursu:</option>
+            <option>Podstawowy - skrzynia manualna</option>
+            <option>Rozszerzony - skrzynia manualna</option>
+            <option>Express - skrzynia manualna</option>
+            <option value="" disabled></option>
+            <option>Podstawowy - skrzynia automatyczna</option>
+            <option>Express - skrzynia automatyczna</option>
+            <option value="" disabled></option>
+            <option>Kurs dla posiadaczy B1 - skrzynia manualna</option>
+            <option>Kurs dla posiadaczy B1 - skrzynia automatyczna</option>
+
+        </select>
+
+        <label for="message">Wiadomość</label>
+        <textarea id="message" rows="4" name="Wiadomosc" placeholder="Zostaw nam swoją wiadomość..."></textarea>
+
+        <input id="default-checkbox" type="checkbox" value="" required>
+        <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900" required>Wyrażam zgodę
+            na przetwarzanie
+            przez OSK Auto-S Sławomir Pługowski z siedzibą w Skórzewie, ul. Jesienna 18, 60-185 Skórzewo,
+            moich danych osobowych zawartych w formularzu zgłoszenia w zakresie niezbędnym do zapisu na kurs
+            prawa jazdy. Podanie danych jest dobrowolne jednak ułatwia kontakt w procesie rekrutacji.
+            Przysługuje Pani/Panu prawo wglądu do treści swoich danych osobowych i ich poprawiania oraz
+            żądania zaprzestania ich przetwarzania.
+        </label>
+
+
+        <button type="submit">Wyślij
+            zgłoszenie</button>
+    </form>
+
 
 
     <div class="footer">
@@ -226,7 +281,6 @@
             <p class="copy">© Copyright - Ośrodek Szkolenia Kierowców Auto-s.pl</p>
             <p class="copy">Design i wykonanie: <a href="#">Krzysztof Zalewski</a></p>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 
 </body>
 
