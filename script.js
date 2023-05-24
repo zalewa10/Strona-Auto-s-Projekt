@@ -7,7 +7,7 @@ var locations = [
   ["Ławica - parking Netto", 52.4121785, 16.8325941],
   ["Ławica - parking siłownia Atlantis", 52.407597, 16.819891],
   ["Junikowo - parking przystanek Cmentarna", 52.385418, 16.838946],
-  ["Ogrody - parking ul. Nowina", 52.416835, 16.878214],
+  ["Ogrody - parking kościoła ul. Nowina", 52.416835, 16.878214],
   ["Os.Kwiatowe - parking Netto", 52.378642, 16.823928],
   ["Os.Kwiatowe - parking kościół", 52.383611, 16.820688],
   ["Biuro i Sala Wykładowa AUTO-S ul.Jesienna 18, Skórzewo", 52.400547, 16.784312],
