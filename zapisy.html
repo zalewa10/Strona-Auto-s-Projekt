@@ -19,38 +19,6 @@
 </head>
 
 <body>
-    <!-- Messenger Wtyczka czatu Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Wtyczka czatu code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "119440157756491");
-        chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v16.0'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-
     <div class="alert">
         <p>Najbliższy kurs - <b>11 kwietnia 2023r.</b></p>
     </div>
@@ -116,9 +84,12 @@
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white środek">Formularz
                     zgłoszeniowy</h2>
             </div>
-            <form action="https://formsubmit.co/zalewastriker10@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="Nowe zgloszenie ze strony Auto-s!">
-                <input type="hidden" name="_next" value="https://kzalewski.com/potwierdzenie.html">
+            <form action="https://formspree.io/f/xwkjyaaz" method="POST">
+                <input type="text" name="_gotcha" style="display:none" />
+                <input name="subject" type="hidden" value="Nowe zgłoszenie od {{ name }}" />
+                <!-- <form action="https://formsubmit.co/zalewastriker10@gmail.com" method="POST"> -->
+                <!-- <input type="hidden" name="_subject" value="Nowe zgloszenie ze strony Auto-s!">
+                <input type="hidden" name="_next" value="https://kzalewski.com/potwierdzenie.html">-->
                 <div class="mb-6">
                     <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Imię
                         i
@@ -138,10 +109,10 @@
                         required>
                 </div>
                 <div class="mb-6">
-                    <label for="tel" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Nr
+                    <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Nr
                         telefonu
                     </label>
-                    <input type="tel" id="tel" name="Numer telefonu"
+                    <input type="phone" id="phone" name="Numer telefonu"
                         class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                         required placeholder="">
                 </div>
