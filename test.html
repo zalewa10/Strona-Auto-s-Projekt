@@ -12,6 +12,12 @@
 
 <body>
   <form action="https://formspree.io/f/xwkjyaaz" method="POST">
+    <input type="text" name="_gotcha" style="display:none" />
+    <input name="subject" type="hidden" value="New submission from {{ name }}" />
+    <label>
+      Imie
+      <input type="name" name="name">
+    </label>
     <label>
       Your email:
       <input type="email" name="email">
@@ -25,5 +31,12 @@
   </form>
 
 </body>
+<script>
+  window.onbeforeunload = () => {
+    for (const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }
+</script>
 
 </html>
