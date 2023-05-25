@@ -91,11 +91,11 @@
                 <!-- <input type="hidden" name="_subject" value="Nowe zgloszenie ze strony Auto-s!">
                 <input type="hidden" name="_next" value="https://kzalewski.com/potwierdzenie.html">-->
                 <div class="mb-6">
-                    <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Imię
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white naglowki">Imię
                         i
                         Nazwisko
                     </label>
-                    <input type="text" id="text" name="Imie i Nazwisko"
+                    <input type="name" id="name" name="Imie i Nazwisko"
                         class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                         required>
                 </div>
@@ -198,5 +198,12 @@
         </div>
 
 </body>
+<script>
+    window.onbeforeunload = () => {
+        for (const form of document.getElementsByTagName('form')) {
+            form.reset();
+        }
+    }
+</script>
 
 </html>
