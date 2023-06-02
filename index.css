@@ -46,6 +46,7 @@ select {
     font-size: 20px;
     text-align: center;
     padding: 5px;
+    position: fixed;
 }
 
 
@@ -101,6 +102,7 @@ h4 {
 
 nav {
     background-color: #e15638;
+    padding-top: 20px;
     border-bottom: 1px solid rgb(0, 0, 0);
 }
 
@@ -545,6 +547,7 @@ form {
 @media screen and (min-width:1024px) {
 
     .alert {
+        position: relative;
         background-color: #e15638;
         color: white;
         margin: 0;
