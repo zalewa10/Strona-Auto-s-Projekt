@@ -41,7 +41,10 @@ select {
 }
 
 .alert {
-    background-color: white;
+    background-color: #e15638;
+    color: white;
+    border-bottom: 1px solid rgba(201, 199, 199, 0.695);
+    /* background-color: white; */
     width: 100%;
     font-size: 20px;
     text-align: center;
@@ -558,6 +561,7 @@ form {
 @media screen and (min-width:1024px) {
 
     .alert {
+        border-bottom: none;
         position: relative;
         background-color: #e15638;
         color: white;
