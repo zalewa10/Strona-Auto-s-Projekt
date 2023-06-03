@@ -538,10 +538,21 @@ form {
 
 .fb {
     color: white;
-    text-decoration: underline 2px blue;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1.4em;
     margin-bottom: 30px;
+}
+
+.fb a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fb2 {
+    height: 30px;
+    margin: 0 10px;
 }
 
 @media screen and (min-width:1024px) {
