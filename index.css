@@ -114,12 +114,15 @@ svg {
 }
 
 .hero {
-    padding: 0px 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: center/cover url("ikonki/kia4.jpg");
+    background-color: #1e1e1e;
+}
 
+.left {
+    padding: 0px 30px;
+    background: center/cover url("ikonki/kia4.jpg");
 }
 
 .zapisz {
@@ -600,6 +603,14 @@ form {
     .zapisz:hover {
         background-color: #dd3131;
         transition: 0.5s;
+    }
+
+    video {
+
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+        scale: 110%;
     }
 
     .hero {
