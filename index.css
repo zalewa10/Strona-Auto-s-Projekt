@@ -614,7 +614,6 @@ form {
     }
 
     .hero {
-        background: none;
         background-color: whitesmoke;
         padding: 20px 60px;
         display: flex;
@@ -648,6 +647,8 @@ form {
     }
 
     .left {
+        padding: 0;
+        background: none;
         width: 60%;
     }
 
