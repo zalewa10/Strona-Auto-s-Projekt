@@ -605,13 +605,6 @@ form {
         transition: 0.5s;
     }
 
-    video {
-
-        left: 0;
-        bottom: 0;
-        z-index: 0;
-        scale: 110%;
-    }
 
     .hero {
         background-color: whitesmoke;
