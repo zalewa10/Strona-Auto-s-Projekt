@@ -121,7 +121,7 @@ svg {
     flex-direction: row;
     flex-wrap: wrap;
     background: #1e1e1e;
-justify-content: center;
+
 }
 
 .left {
@@ -547,16 +547,6 @@ form {
     margin-bottom: 30px;
 }
 
-#vid{display: none;}
-#vid2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    display: inherit;
-    height: 100%;
-    width: 100%;
-    padding: 30px 10px 0 10px;}
 .fb a {
     display: flex;
     flex-direction: row;
@@ -571,7 +561,6 @@ form {
 
 video {
     padding: 30px 30px 0 30px;
-    
 }
 
 iframe{
@@ -587,11 +576,9 @@ iframe{
     margin: 30px 0px 5px 0;
 }
 @media screen and (min-width:1024px) {
-#vid{
-    display: initial;
-}
-#vid2{display: none;}
+
 .youtube {
+display:flex;
         margin: 0;
         align-items: flex-end;
         padding-top: 20px;
