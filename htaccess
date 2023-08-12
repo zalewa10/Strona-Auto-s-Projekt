@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^auto-s\.pl [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.auto-s.pl/$1 [R,L]
+
+<FilesMatch "\.(ico|pdf|jpg|jpeg|png|webp|gif|html|htm|xml|txt|xsl|css)$">
+Header set Cache-Control "max-age=31536050"
+</FilesMatch>

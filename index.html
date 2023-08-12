@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto-S OSK</title>
+    <title>Auto-S OSK - Skórzewo, Plewiska, Przeźmierowo, Poznań, Dopiewo, Dopiewiec, Dąbrowa, Dąbrówka, Tarnowo
+        Podgórne, Palędzie, Sady, Chyby, Konarzewo, Komorniki</title>
     <link rel="icon" href="ikonki/logo_l.jpg" type="image/icon type">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,17 +14,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-    <script src='Leaflet.Sleep.js'></script>
 </head>
 
 <body>
-    <!-- Messenger Wtyczka czatu Code -->
+
     <div id="fb-root"></div>
 
-    <!-- Your Wtyczka czatu code -->
+ 
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
 
@@ -33,7 +32,7 @@
         chatbox.setAttribute("attribution", "biz_inbox");
     </script>
 
-    <!-- Your SDK code -->
+ 
     <script>
         window.fbAsyncInit = function () {
             FB.init({
@@ -52,7 +51,7 @@
     </script>
 
     <div class="alert">
-        <p>Najbliższy kurs - <b>27 czerwca 2023r.</b></p>
+        <p>Najbliższy kurs - <b>11 września 2023r.</b></p>
     </div>
 
 
@@ -118,22 +117,22 @@
         <div class="left">
             <h1>Nie masz prawka?</h1>
             <h2>Przyjdź do Sławka!</h2>
-            <h4>Jako szkoła jazdy jesteśmy tutaj po to, aby przeprowadzić profesjonalne szkolenie, które
-                doprowadzi Cię do pozytywnie zdanego egzaminu.
-                Razem przejdziemy przez każdy etap kursu i damy Tobie poczucie bezpieczeństwa za kierownicą.</h4>
-            <a href="zapisy.html"><button class="zapisz">ZAPISZ SIĘ</button></a>
+            <h4>Jako szkoła jazdy jesteśmy tutaj po to, aby przeprowadzić profesjonalne szkolenie z zakresu prawa jazdy
+                kategorii B.
+                Razem przejdziemy przez każdy etap kursu, co doprowadzi Cię do pozytywnego wyniku egzaminu oraz da
+                poczucie bezpieczeństwa za kierownicą.</h4>
+            <button class="zapisz"><a href="zapisy.html">ZAPISZ SIĘ</a></button>
         </div>
         <div class="prawo">
-            <video class="w-full h-auto max-w-full border border-gray-200 rounded-lg dark:border-gray-700" controls
-                autoplay muted loop>
-                <source src="video/videoplayback.mp4" type="video/mp4">
+            <video class="" id="vid" preload="metadata" poster="ikonki/thumbnail.png" controls muted autoplay loop >
+                <source src="video/videoplayback.mp4" type="video/mp4" alt="Wykonany przez Jasiek Olejarz">
                 Your browser does not support the video tag.
             </video>
+            <iframe id="vid2" width="600" height="600" src="https://www.youtube.com/embed/NI-zikl2jQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
     </div>
 
-    </div>
 
     <div class="wyroznia">
         <h1 class="naglowek">Co nas wyróżnia:</h1>
@@ -158,7 +157,7 @@
                     ekspresowych.</p>
             </div>
             <div class="fiszka2">
-                <img src="ikonki/traffic-cone.png" class="ikonka" alt="https://www.freepik.com">
+                <img src="ikonki/traffic-cone.png" class="ikonka" alt="">
                 <p class="tytul">Własny plac manewrowy</p>
                 <p class="opis">W naszej szkole oferujemy wszystko
                     w jednym miejscu, zarówno plac manewrowy jak i sala wykładowa znajdują się w Skórzewie.</p>
@@ -220,7 +219,7 @@
             <div class="lista">
                 <div class="plus">
                     <img class="tick" src="ikonki/Tick.svg" alt="">
-                    <p>Szkolimy od 18 lat</p>
+                    <p>Szkolimy od 19 lat</p>
                 </div>
                 <div class="plus">
                     <img class="tick" src="ikonki/Tick.svg" alt="">
@@ -240,16 +239,12 @@
                 </div>
                 <div class="plus">
                     <img class="tick" src="ikonki/Tick.svg" alt="">
-                    <p>Pracujemy dla was przez 7 dni w tygodniu</p>
+                    <p>Pracujemy dla Was przez 7 dni w tygodniu</p>
                 </div>
             </div>
             <div class="youtube">
-                <img src="ikonki/plac3.jpg" alt="">
-                <!-- <iframe width="600" height="200" src="https://www.youtube.com/embed/q3uXXh1sHcI"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe> -->
-                <!-- <p class="yt">Nasza autorska ścieżka szkoleniowa</p> -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NI-zikl2jQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p class="yt">Nasza autorska ścieżka zadań</p>
             </div>
         </div>
     </div>
@@ -294,15 +289,19 @@
         <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 </body>
+
 <script>
-    const menuHamburger = document.querySelector(".menu-hamburger")
-    const navLinks = document.querySelector(".nav-links")
+    document.addEventListener("DOMContentLoaded", function() {
+        var vid = document.querySelector("#vid");
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-    menuHamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('mobile-menu')
-    })
+        if (screenWidth < 800) {
+            vid.removeAttribute("autoplay");
+        } else {
+            vid.setAttribute("autoplay", "true");
+        }
+    });
 </script>
-
 <script src="do-gory.js"></script>
 <script src="Leaflet.Sleep.js"></script>
 <script src="script.js"></script>

@@ -14,7 +14,7 @@ var locations = [
   ["Dąbrówka - parking stacja Orlen", 52.381938, 16.744593],
   ["Dąbrowa - parking Chata Polska", 52.396823, 16.757426],
 ];
-var osm = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+var osm = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 var map = L.map('map', {
   // true by default, false if you want a wild map
   sleep: true,
@@ -33,17 +33,19 @@ var map = L.map('map', {
 
 }).setView([52.402651, 16.826466], 12).addLayer(L.tileLayer(osm));
 
-mapLink =
-  '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-L.tileLayer(
-  'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+mapLink ='<a href="https://openstreetmap.org">OpenStreetMap</a>';
+
+  L.tileLayer(
+  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; ' + mapLink + ' Contributors',
   maxZoom: 18,
 }).addTo(map);
+
 
 for (var i = 0; i < locations.length; i++) {
   marker = new L.marker([locations[i][1], locations[i][2]])
     .bindPopup(locations[i][0])
     .addTo(map);
 }
+
 
